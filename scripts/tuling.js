@@ -9,15 +9,16 @@ module.exports = function (robot) {
             loc: '上海市'
         }).then(function (result) {
             res.send(result.text);
-            if (result.url) {
-                res.http(result.url).get(function (err, res, body) {
-                    if (err || res.statusCode !== 200) {
-                        res.send(err)
-                    } else {
-                        res.send(JSON.parse(body))
-                    }
-                });
-            }
+            res.send(result.url);
+            // if (result.url) {
+            //     res.http(result.url).get(function (err, res, body) {
+            //         if (err || res.statusCode !== 200) {
+            //             res.send(err)
+            //         } else {
+            //             res.send(JSON.parse(body))
+            //         }
+            //     });
+            // }
         });
     });
 }

@@ -1,0 +1,26 @@
+// pm2 start bin/app.json --only  amor-bot-slack
+{
+    "apps": [
+        {
+            "name": "amor-bot",
+            "args": [
+                "-a",
+                "rocketchat"
+            ],
+            "script": "./bin/hubot",
+            "exec_mode": "fork",
+            "exec_interpreter": "bash",
+            "autorestart": true,
+            "env": {
+                "NODE_ENV": "production",
+                "PORT": "9191",
+                "ROCKETCHAT_URL": "45.32.44.238:3000",
+                "ROCKETCHAT_ROOM": "general",
+                "BOT_NAME": "amor-bot",
+                "ROCKETCHAT_USER": "amor-bot",
+                "ROCKETCHAT_PASSWORD": "940616",
+                "LISTEN_ON_ALL_PUBLIC": true
+            }
+        }
+    ]
+}

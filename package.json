@@ -18,7 +18,8 @@
     "hubot-scripts": "^2.17.2",
     "hubot-shipit": "^0.2.0",
     "hubot-thank-you": "0.0.3",
-    "moment": "^2.18.1"
+    "moment": "^2.18.1",
+    "tuling": "0.0.3"
   },
   "engines": {
     "node": "0.10.x"

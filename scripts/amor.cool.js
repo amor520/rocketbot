@@ -24,6 +24,6 @@ module.exports = function (robot) {
             } else {
                 res.send(JSON.parse(body))
             }
-        })
+        });
     });
 };

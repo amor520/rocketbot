@@ -4,7 +4,7 @@
 var TULING = require('tuling');
 var tuling = new TULING({ key: '44674ef4014542909416ad050536c340' });
 module.exports = function (robot) {
-    robot.catchAll(/(.*)/, function (res) {
+    robot.catchAll(function (res) {
         var info = res.match[0];
         tuling.send({
             userid: 1,
